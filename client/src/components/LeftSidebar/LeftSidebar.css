@@ -1,0 +1,119 @@
+.left-sidebar{
+    width: 164px;
+    box-shadow: 1px 1px 0 rgba(0,0,0, 0.2);
+    transition: box-shadow ease-in-out 0.1s, transform ease-in-out 0.1s;
+    transform: translateZ(0);
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.side-nav{
+    height: auto;
+    max-width: 100%;
+    position: sticky;
+    margin: 50px 0px;
+    padding: 20px 0px;
+}
+
+.side-nav-div{
+    padding: 10px 0px;
+
+}
+
+.side-nav-div div{
+    padding-left: 10px;
+}
+
+.side-nav-links{
+    text-decoration: none;
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+
+.side-nav-links:hover{
+    color: black;
+}
+
+.active{
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(225, 225, 225);
+    border-right: solid 3px #ef8236;
+}
+
+.stackbtn{
+    background-color: #FEE1B9;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 13px; 
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .left-sidebar{
+        width: 200px;
+    }
+    .stackbtn{
+        margin-left: 1px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .left-sidebar{
+        width: 150px;
+    }
+    .stackbtn{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .left-sidebar{
+        width: 60px;
+        font-size: 13px;
+    }
+    .stackbtn .icon{
+        font-size: 1em;
+        padding-left: -10px;
+    }
+    .side-nav-div p{
+        display: none;
+    }
+    .side-nav-links p{
+        display: none;
+    }
+    .side-nav-links .icon{
+        height: 50px;
+        width: 50px;
+        font-size: 2em;
+        line-height: 2;
+        margin-bottom: 1rem;
+        float: left;
+    }
+    .side-nav-links img{
+        height: 50px;
+        width: 30px;
+        line-height: 2;
+        margin-bottom: 1rem;
+        float: left;
+    }
+    .side-nav-div span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .left-sidebar{
+        width: 40px;
+    }
+    .stackbtn{
+        padding: 5px 10px;  
+    }
+}
